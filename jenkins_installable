@@ -1,0 +1,11 @@
+
+cd /opt
+sudo apt update -y
+sudo apt-get update -y
+sudo apt-get install openjdk-8-jdk
+wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+echo "deb http://pkg.jenkins-ci.org/debian binary/" | sudo tee -a /etc/apt/sources.list.d/jenkins.list
+sudo apt-get update
+sudo apt-get install jenkins
+service jenkins status
+apt-get install openjdk-8-jdk
